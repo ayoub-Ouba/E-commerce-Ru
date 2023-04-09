@@ -1,0 +1,12 @@
+.nav{
+    @apply shadow-md w-full fixed top-0 left-0;
+}
+.nav_content{
+    @apply md:flex items-center justify-between bg-white py-4 md:px-[20%] px-7;
+}
+.logo{
+    @apply font-bold text-3xl cursor-pointer flex items-center max-md:mx-auto max-md:w-[40%] font-[Poppins] text-gray-800;
+}
+.logo span {
+    @apply text-3xl text-black mr-1 pt-2;
+}
