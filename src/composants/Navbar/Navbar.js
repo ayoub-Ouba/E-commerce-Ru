@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
-import '../navbar.css';
+import "../../assets/navbar.css"
 export default function Navbar() {
     let Links = [
         { name: "Home", link: "/" },
-        { name: "Shop", link: "/" }
+        { name: "Shop", link: "/shop" }
     ];
     let [open, setOpen] = useState(false);
     return (<div className='nav'>
       <div className='nav_content'>
+        <a href='/'>
           <div className='logo'>
               <span>
                   <ion-icon name="logo-ionic"></ion-icon>
               </span>
               RUFS
-          </div>
+          </div></a>
           <div className='flex '>
-            <div onClick={() => setOpen(!open)} className='text-3xl absolute left-0 top-6 cursor-pointer md:hidden'>
+            <div onClick={() => setOpen(!open)} className='text-3xl absolute left-0 top-6 cursor-pointer md:hidden '>
                 <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
             </div>
           {/* les liens */}
@@ -61,7 +62,7 @@ export default function Navbar() {
                     </span>
                   </a>
                   <a className="flex items-center mx-2 " href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
@@ -76,6 +77,5 @@ export default function Navbar() {
           </div>
       </div>
     </div >
-
-        )
+  )
 }

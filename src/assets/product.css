@@ -1,0 +1,27 @@
+.card_produit{
+    @apply bg-white hover:scale-105 hover:shadow-2xl duration-500 mb-3 ml-5 relative  h-[400px] max-[470px]:h-[290px] max-[470px]:mx-2 ;
+}
+.image_produit{
+    @apply w-[100%] h-[70%] ;
+}
+.coeur_panier{
+    @apply  ml-auto  flex ;
+}
+.info_produit{
+    @apply px-4 py-3 w-[100%] 
+}
+.panier{
+    @apply w-[27px] h-[27px]  max-[470px]:w-[24px] max-[470px]:h-[24px] max-[470px]:mb-2 ;
+}
+.coeur{
+    @apply w-[35px] h-[35px] cursor-pointer absolute top-0 right-3 max-[470px]:w-[28px] max-[470px]:h-[28px] ;
+}
+.prix_precedent{
+    @apply text-sm text-gray-600 cursor-auto ml-2 ;
+}
+.prix_solde{
+    @apply text-lg font-semibold text-black cursor-auto my-3 ;
+}
+.nom_produit{
+    @apply text-lg font-bold text-black truncate block capitalize ;
+}
